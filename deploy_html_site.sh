@@ -7,7 +7,7 @@ function deploy-html() {
     # starting apache
     sudo service httpd start;
 
-    sudo cp html_website_deploy/site/* var/www/html/;
+    sudo cp -r html_website_deploy/site/* var/www/html/;
 
     # restarting apache web server
     sudo service httpd restart;
